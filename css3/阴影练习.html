@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .normal p{
+            text-shadow:1px 1px rgba(0,0,0,.3);
+        }
+        .blur p{
+            text-shadow: 1px 1px 5px rgba(0,0,0,.3);
+        }
+        .group p{
+            text-shadow: 1px 1px 5px rgba(0,0,0,.3),1px 1px 5px rgba(0,0,0,.3);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="normal">
+        <strong>普通文本阴影</strong>
+        <p>测试普通文本阴影</p>
+    </li>
+    <li class="blur">
+        <strong>模糊文本阴影</strong>
+        <p>测试模糊文本阴影</p>
+    </li>
+    <li class="group">
+        <strong>多重模糊文本阴影</strong>
+        <p>测试多重模糊文本阴影</p>
+    </li>
+</ul>
+</body>
+</html>
