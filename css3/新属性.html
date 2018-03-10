@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_582961_fhr2vvz2xd97wrk9.css">
+    <style>
+        #div1{
+            text-shadow: 10px 10px 3px #f00;  /*水平  垂直  模糊程度*/
+        }
+        #div2,#div3{
+            width: 200px;
+            border: 1px solid;
+        }
+        /*三个必须一起用*/
+        #div3{
+            overflow: hidden;
+            white-space: nowrap;/*不换行*/
+            text-overflow:ellipsis ;/*省略*/
+        }
+        #div4{
+            /*强制换行*/
+            width: 200px;
+            border: 1px solid;
+            word-wrap:break-word;
+        }
+        #div2{
+            font-family:'Serendipity Script';
+        }
+        /*定义字体*/
+        @font-face {
+            font-family: 'Serendipity Script';
+            src: url('../font/Serendipity Script/Serendity Script.eot'); /* IE9+ */
+            src: url('../font/Serendipity Script/Serendity Script.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../font/Serendipity Script/Serendity Script.woff') format('woff'), /* chrome、firefox */
+            url('../font/Serendipity Script/Serendity Script.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../font/Serendipity Script/Serendity Script.svg#fontname') format('svg'); /* iOS 4.1- */
+        }
+        .icon-toutiao{
+            font-size: 80px;
+        }
+        #div6{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*元素的阴影*/
+            box-shadow: 10px 10px 2px rgba(0,255,0,0.8);
+        }
+        /*做三角形*/
+        #div7{
+            border-width: 50px;
+            border-style:solid;
+            border-left-color:transparent;/*透明的*/
+            border-right-color:#f0f;
+            border-top-color:#ff0;
+            border-bottom-color:#00f;
+            width:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">hdhsdgb</div>
+    <div id="div2">hsgdyeuvfsefklkr</div>
+    <div id="div3">杜绝好肚饿不规范一个要几女没法打女方家搞不好就不给</div>
+    <div id="div4">ndbfhdgfsjdhuiehwfugewbfhjbfhj</div>
+    <div id="div5">
+        <i class="icon iconfont icon-toutiao"></i>
+    </div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8">border-img</div>
+</body>
+</html>

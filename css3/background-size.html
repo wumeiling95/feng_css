@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            /*background-color: #ff6600;*/
+            background: url('../imgs/shangcheng.png') no-repeat;
+            border: 10px solid;
+            padding: 100px;
+            background-origin:content-box;
+            /*background-size:cover;*/
+        }
+        #div2{
+            width: 800px;
+            height: 800px;
+            font-size: 800px;
+            color:transparent;/*透明*/
+            background:url("../imgs/pic.jpg");
+            border: 10px solid #000000;
+            padding: 20px;
+            -webkit-background-clip: content-box;
+        }
+        #div3{
+            width: 400px;
+            height: 400px;
+            /*多背景*/
+            background: url("../imgs/pic.jpg") no-repeat 100px 100px,url("../imgs/pic.jpg") no-repeat 105px 10px;/*移动100px  100px*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2">123</div>
+    <div id="div3"></div>
+</body>
+</html>

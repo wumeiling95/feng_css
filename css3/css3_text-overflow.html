@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1,#div2{
+            width: 300px;
+            height: 50px;
+            border: 1px solid #000;
+            /*word-wrap: break-word;!*强制换行，破坏单词语义*!*/
+            text-overflow: ellipsis;
+            white-space: nowrap;/*不折行*/
+            overflow: hidden;/*text-overflow: ellipsis;   overflow: hidden;会出现省略...的形式*/
+        }
+    </style>
+</head>
+<body>
+    <!--文本内容溢出问题-->
+    <div id="div1">shdvjshfvefebfsdbmnbfndsbhjfdsbhfvaghsdvjhsbfkdsf</div>
+    <div id="div2">
+        十多年计算机设计师介绍介绍计算机技术计算机技术介绍介绍计算机
+    </div>
+</body>
+</html>
