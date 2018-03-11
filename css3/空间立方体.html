@@ -7,7 +7,7 @@
         body{
             background-color: #000;
             perspective:1000px;
-            perpective-origin:100px 100px;
+            perspective-origin:center center;
         }
         .box{
             position: absolute;
@@ -20,14 +20,14 @@
             transform-style: preserve-3d;
             animation:run 2s linear infinite;
         }
-        /*@keyframes run{*/
-            /*from{*/
+        @keyframes run{
+            from{
 
-            /*}*/
-            /*to{*/
-                /*transform:rotateY(360deg);*/
-            /*}*/
-        /*}*/
+            }
+            to{
+                transform:rotateY(360deg);
+            }
+        }
         .box div{
             width: 200px;
             height: 200px;
@@ -43,23 +43,41 @@
             left:0;
         }
         .div1{
-            transform:rotateY(90deg) translateZ(100px);
+            transform: rotateY(90deg) translateZ(100px);
         }
         .div2{
-            transform:rotateY(-180deg) translateZ(100px);
+            transform: rotateY(-90deg) translateZ(100px);
         }
         .div3{
-            transform:rotateY(90deg) translateZ(100px);
+            transform: rotateY(180deg) translateZ(100px);
         }
         .div4{
-            translateZ(100px);
+            transform: rotateY(0deg) translateZ(100px);
         }
         .div5{
-            transform:rotateX(-90deg) translateY(-100px);
+            transform: rotateX(90deg) translateZ(100px);
         }
         .div6{
-            transform:rotateX(90deg) translateY(100px);
+            transform: rotateX(-90deg) translateZ(100px);
         }
+        /*.div1{*/
+            /*transform:rotateY(90deg) translateZ(100px);*/
+        /*}*/
+        /*.div2{*/
+            /*transform:rotateY(-180deg) translateZ(100px);*/
+        /*}*/
+        /*.div3{*/
+            /*transform:rotateY(90deg) translateZ(100px);*/
+        /*}*/
+        /*.div4{*/
+            /*translateZ(100px);*/
+        /*}*/
+        /*.div5{*/
+            /*transform:rotateX(-90deg) translateY(-100px);*/
+        /*}*/
+        /*.div6{*/
+            /*transform:rotateX(90deg) translateY(100px);*/
+        /*}*/
         </style>
 </head>
 <body>
